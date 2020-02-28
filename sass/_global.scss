@@ -1,6 +1,26 @@
+body{
+
+    font-size: 62.5%;
+    background-color: gray;
+
+}
+
+nav {
+
+    background-color: $wht;
+}
+
 h1, h2, h3 {
 
     color: $wht;
+    font-weight: bold;
+
+    @media (min-width: 100px){
+
+        width: 100%;
+        padding: 5%;
+        font-size: 1.9rem;
+    }
     
 }
 
@@ -10,6 +30,7 @@ p {
     @media (min-width: 100px){
 
         color: $wht;
+        font-size: 1.2rem;
     }
 
   
@@ -21,6 +42,8 @@ button {
     background-color: $pur;
     color: $wht;
     border: none;
+    padding: 1.2%;
+    width: 10rem;
 }
 
 a {
