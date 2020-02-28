@@ -303,8 +303,13 @@ template {
 [hidden] {
   display: none; }
 
-p, h1, h2 {
-  color: white; }
+h1, h2 {
+  color: white;
+  margin: none; }
+
+@media (min-width: 100px) {
+  p {
+    color: white; } }
 
 button {
   background-color: purple;

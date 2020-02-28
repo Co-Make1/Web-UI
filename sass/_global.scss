@@ -1,7 +1,20 @@
-p, h1, h2 {
+h1, h2 {
 
     color: $wht;
+    margin: none;
     
+}
+
+p {
+
+
+    @media (min-width: 100px){
+
+        color: $wht;
+    }
+
+  
+
 }
 
 button {
