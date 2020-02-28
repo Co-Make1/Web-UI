@@ -303,9 +303,8 @@ template {
 [hidden] {
   display: none; }
 
-h1, h2 {
-  color: white;
-  margin: none; }
+h1, h2, h3 {
+  color: white; }
 
 @media (min-width: 100px) {
   p {
@@ -315,6 +314,9 @@ button {
   background-color: purple;
   color: white;
   border: none; }
+
+a {
+  text-decoration: none; }
 
 .coHero {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -342,7 +344,7 @@ button {
   margin: 0;
   padding: 0; }
 
-.coHeroBigCont p {
+.coHeroBigCont p, .coHeroBigCont h3 {
   color: black; }
 
 /*# sourceMappingURL=index.css.map */
