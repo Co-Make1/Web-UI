@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-size: 3.6rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  height: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+header h1 {
+  color: #61098a;
+}
+header nav {
+  font-size: 1.6rem;
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+header a {
+  text-decoration: none;
+  color: #9e9493;
+}
+header a:hover {
+  letter-spacing: 0.75rem;
+  transition: all 400ms ease-in-out;
+}
+footer {
+  height: 10rem;
+}
+footer h3 {
+  color: #61098a;
+  padding: 4.5% 35%;
+}
+.main-content {
+  height: 50rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.main-content img {
+  height: 25rem;
+  width: 50rem;
+  margin-bottom: 10rem;
+}
+.main-content .main-text {
+  height: 75%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.first-picture {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 2px dotted #61098a;
+  padding-bottom: 5%;
+}
+.first-picture p {
+  width: 30%;
+  margin-top: 5%;
+}
+.first-picture img {
+  width: 20rem;
+  height: 5%;
+}
+.middle-pictures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 50rem;
+  border-bottom: 2px dotted #61098a;
+}
+.middle-pictures .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+}
+.middle-pictures .left p {
+  margin-bottom: 5%;
+}
+.middle-pictures .left img {
+  width: 60%;
+}
+.middle-pictures .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.middle-pictures .right p {
+  margin-bottom: 5%;
+}
+.middle-pictures .right img {
+  width: 30%;
+}
+.lower-pictures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 50rem;
+  border-bottom: 2px dotted #61098a;
+}
+.lower-pictures .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+.lower-pictures .left p {
+  margin-bottom: 5%;
+}
+.lower-pictures .left img {
+  width: 70%;
+}
+.lower-pictures .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5%;
+}
+.lower-pictures .right p {
+  margin-bottom: 5%;
+}
+.lower-pictures .right img {
+  width: 40%;
+}
+.last-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 15%;
+}
+.last-picture p {
+  margin-bottom: 5%;
+}

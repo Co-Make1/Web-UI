@@ -1,0 +1,24 @@
+header {
+    height: 10rem;
+
+    .flexbox(space-evenly, center, row);
+
+    h1 {
+        color: @logo;
+    }
+
+    nav {
+        font-size: 1.6rem;
+        width: 75%;
+        .flexbox(space-evenly, center, row);
+    }
+        a {
+            text-decoration: none;
+            color: @nav;
+            &:hover {
+                letter-spacing: .75rem;
+                transition: all 400ms ease-in-out;
+            }
+        }
+
+}
