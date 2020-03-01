@@ -1,8 +1,11 @@
 .first-picture {
 
-    .flexbox (space-evenly, center, row);
-    border-bottom: 2px dotted @logo;
     padding-bottom: 5%;
+    height: 50rem;
+    margin: 0% 5%;
+    background: @backgroundcolor;
+    .flexbox (space-evenly, center, row);
+    
 
     p {
         width: 30%;
@@ -17,9 +20,9 @@
 }
 
 .middle-pictures {
-    .flexbox (space-between, center, row);
+    
     height: 50rem;
-    border-bottom: 2px dotted @logo;
+    .flexbox (space-between, center, row);
 
     .left {
         .flexbox(center, center, column);
@@ -48,9 +51,9 @@
 }
 
 .lower-pictures {
-    .flexbox (space-between, center, row);
+    background: @backgroundcolor;
     height: 50rem;
-    border-bottom: 2px dotted @logo;
+    .flexbox (space-between, center, row);
 
     .left {
         .flexbox(center, center, column);
@@ -81,8 +84,9 @@
 }
 
 .last-picture {
-    .flexbox (center, center, column);
+    
     padding-top: 15%;
+    .flexbox (center, center, column);
     
     p {
         margin-bottom: 5%;
