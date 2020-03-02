@@ -203,6 +203,7 @@ header a:hover {
   }
   header nav {
     height: 50%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -560,10 +561,9 @@ footer h3 {
   .login form {
     margin: 0% 18%;
     width: 100%;
-    text-transform: uppercase;
   }
   .login label {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .login input {
     width: 100%;
@@ -575,5 +575,106 @@ footer h3 {
   }
   .login form {
     margin: 0% 15%;
+  }
+}
+.job-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 3%;
+}
+.job-content img {
+  opacity: 0.9;
+}
+.job-content .job-text {
+  margin-right: 10%;
+}
+.job-content form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 3rem;
+}
+.job-content form label {
+  display: block;
+  padding: 2rem 0;
+  color: #8f0c8b;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.job-content form input {
+  display: block;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+}
+.job-content form input:focus {
+  border-color: #8f0c8b;
+  transition: 500ms ease-in-out;
+}
+.job-content form textarea {
+  resize: none;
+  width: 100%;
+  display: block;
+  height: 1.6rem;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  max-height: auto;
+}
+.job-content form textarea:focus {
+  border-color: #8f0c8b;
+  transition: 500ms ease-in-out;
+}
+.job-content form #searchButton {
+  margin-top: 10%;
+  border-radius: 50px;
+  width: 200px;
+  height: 40px;
+  font-size: 1.6rem;
+  background: #8f0c8b;
+  color: white;
+  font-family: Caladea;
+}
+@media (max-width: 800px) {
+  .job-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .job-content img {
+    margin-bottom: 10%;
+  }
+  .job-content .job-text {
+    margin-left: 15%;
+    width: 30%;
+    text-align: center;
+  }
+  .job-content label {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.6rem;
+  }
+  .job-content #searchButton {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .job-content {
+    margin-top: 10%;
+  }
+  .job-content img {
+    display: none;
+  }
+  .job-content #location {
+    margin-bottom: 10%;
+  }
+  .job-content #searchButton {
+    margin-left: -25%;
+    margin-bottom: 20%;
   }
 }
