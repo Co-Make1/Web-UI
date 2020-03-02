@@ -1,13 +1,10 @@
-.coHero {
+.coHero, .coHeroBig, .coAboutHero {
 
     @include myHero;
 
 }
 
-.coHeroBig {
 
-    @include myHero;
-}
 
 
 .coHeroBigCont p, .coHeroBigCont h3 {
@@ -17,3 +14,80 @@
 
 }
 
+
+
+
+
+.aboutAvi, .aboutAvi2{
+
+    background-color: $bck;
+    
+
+    img { 
+    @media (min-width: 100px){
+
+        width: 25%;
+
+
+    }
+
+    @media (min-width: 800px){
+
+        width: 40%;
+
+
+    }
+
+
+    @media (min-width: 1000px){
+
+
+        width: 75%;
+
+    }
+}
+
+}
+
+
+#brianC{
+
+    background-color: $pur;
+
+  
+}
+
+#joshC{
+
+    background-color: green;
+
+}
+
+
+#alessandraL{
+
+    background-color: hotpink;
+
+}
+
+#sebastianG {
+
+    background-color: red;
+
+}
+
+#natalieD{
+
+    background-color: royalblue;
+
+    p{
+
+        width: 88%;
+        
+    }
+}
+
+#michaelF{
+
+    background-color: sandybrown;
+}

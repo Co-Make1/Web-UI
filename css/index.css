@@ -305,7 +305,7 @@ template {
 
 body {
   font-size: 62.5%;
-  background-color: gray; }
+  background-color: lightgrey; }
 
 nav {
   background-color: white; }
@@ -334,20 +334,7 @@ button {
 a {
   text-decoration: none; }
 
-.coHero {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/co-make.jpg");
-  /* Set a specific height */
-  height: 50%;
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin: 0;
-  padding: 0; }
-
-.coHeroBig {
+.coHero, .coHeroBig, .coAboutHero {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/co-make.jpg");
   /* Set a specific height */
@@ -362,5 +349,37 @@ a {
 
 .coHeroBigCont p, .coHeroBigCont h3 {
   color: black; }
+
+.aboutAvi, .aboutAvi2 {
+  background-color: black; }
+  @media (min-width: 100px) {
+    .aboutAvi img, .aboutAvi2 img {
+      width: 25%; } }
+  @media (min-width: 800px) {
+    .aboutAvi img, .aboutAvi2 img {
+      width: 40%; } }
+  @media (min-width: 1000px) {
+    .aboutAvi img, .aboutAvi2 img {
+      width: 75%; } }
+
+#brianC {
+  background-color: purple; }
+
+#joshC {
+  background-color: green; }
+
+#alessandraL {
+  background-color: hotpink; }
+
+#sebastianG {
+  background-color: red; }
+
+#natalieD {
+  background-color: royalblue; }
+  #natalieD p {
+    width: 88%; }
+
+#michaelF {
+  background-color: sandybrown; }
 
 /*# sourceMappingURL=index.css.map */
