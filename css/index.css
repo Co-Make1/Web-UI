@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Caladea', sans-serif;
-  color: #a6a4b0;
+  color: #363635;
 }
 .container {
   margin: 0% 5%;
@@ -169,7 +169,7 @@ header {
   flex-direction: row;
 }
 header h1 {
-  color: #a170b5;
+  color: #8f0c8b;
 }
 header nav {
   font-size: 1.6rem;
@@ -181,24 +181,55 @@ header nav {
 }
 header a {
   text-decoration: none;
-  color: #9e9493;
+  color: #b0a49c;
 }
 header a:hover {
   letter-spacing: 0.75rem;
   transition: all 400ms ease-in-out;
+}
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    height: 50vh;
+    background-color: #ffdb9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  header nav {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  header a {
+    font-size: 4rem;
+    line-height: 150%;
+  }
 }
 footer {
   height: 10rem;
   text-align: center;
 }
 footer h3 {
-  color: #a170b5;
+  color: #8f0c8b;
   margin-top: 5%;
+}
+@media (max-width: 800px) {
+  footer {
+    border-top: 1px dashed #363635;
+  }
 }
 .main-content {
   height: 50rem;
   margin: 0% 5%;
-  background-color: #fffbed;
+  background-color: #ffdb9e;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -222,7 +253,7 @@ footer h3 {
 }
 .main-content h1 {
   font-size: 5rem;
-  color: #a170b5;
+  color: #8f0c8b;
 }
 .main-content .top-title {
   margin-right: 30%;
@@ -257,7 +288,7 @@ footer h3 {
   margin: 0% 5%;
   margin-top: 10%;
   padding-left: 20%;
-  background-color: #fffbed;
+  background-color: #ffdb9e;
   height: 50rem;
   display: flex;
   justify-content: space-between;
@@ -279,7 +310,7 @@ footer h3 {
   width: 200px;
   height: 40px;
   font-size: 1.6rem;
-  background: #a170b5;
+  background: #8f0c8b;
   color: white;
   font-family: Caladea;
 }
@@ -293,7 +324,7 @@ footer h3 {
   padding-bottom: 5%;
   height: 50rem;
   margin: 0% 5%;
-  background: #fffbed;
+  background: #ffdb9e;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -340,7 +371,7 @@ footer h3 {
   width: 30%;
 }
 .lower-pictures {
-  background: #fffbed;
+  background: #ffdb9e;
   height: 50rem;
   display: flex;
   justify-content: space-between;
@@ -393,8 +424,23 @@ footer h3 {
 .contact-content img {
   height: 50rem;
   width: 200%;
-  margin-left: -75%;
+  margin-left: -110%;
   opacity: 0.8;
+}
+@media (max-width: 800px) {
+  .contact-content img {
+    display: none;
+  }
+  .contact-content .c-top {
+    margin: 0 auto;
+  }
+  .contact-content label {
+    text-align: center;
+    width: 100%;
+  }
+  .contact-content #sendButton {
+    margin-left: 15%;
+  }
 }
 .c-top {
   height: 50rem;
@@ -416,7 +462,7 @@ footer h3 {
 .c-top form label {
   display: block;
   padding: 2rem 0;
-  color: #a170b5;
+  color: #8f0c8b;
   font-size: 1.6rem;
   font-weight: 700;
 }
@@ -428,7 +474,7 @@ footer h3 {
   width: 100%;
 }
 .c-top form input:focus {
-  border-color: #a170b5;
+  border-color: #8f0c8b;
   transition: 500ms ease-in-out;
 }
 .c-top form textarea {
@@ -443,7 +489,7 @@ footer h3 {
   margin-bottom: 15%;
 }
 .c-top form textarea:focus {
-  border-color: #a170b5;
+  border-color: #8f0c8b;
   transition: 500ms ease-in-out;
 }
 .c-top form #sendButton {
@@ -451,7 +497,83 @@ footer h3 {
   width: 200px;
   height: 40px;
   font-size: 1.6rem;
-  background: #a170b5;
+  background: #8f0c8b;
   color: white;
   font-family: Caladea;
+}
+.login {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-right: 10%;
+}
+.login img {
+  height: 50rem;
+  width: 100%;
+}
+.login form {
+  height: 30rem;
+  width: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login label {
+  display: block;
+  padding: 2rem 0;
+  color: #363635;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.login input {
+  display: block;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 50%;
+}
+.login input:focus {
+  border-color: #8f0c8b;
+  transition: 500ms ease-in-out;
+}
+.login #pwordButton {
+  border-radius: 50px;
+  width: 200px;
+  height: 40px;
+  font-size: 1.6rem;
+  background: #8f0c8b;
+  color: white;
+  font-family: Caladea;
+  margin-top: 10%;
+}
+@media (max-width: 800px) {
+  .login {
+    width: 80%;
+    margin-bottom: 20%;
+  }
+  .login img {
+    display: none;
+  }
+  .login form {
+    margin: 0% 18%;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  .login label {
+    font-size: 5rem;
+  }
+  .login input {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .login {
+    opacity: 0.5;
+  }
+  .login form {
+    margin: 0% 15%;
+  }
 }

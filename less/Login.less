@@ -1,0 +1,81 @@
+.login {
+    // border: 3px solid palegreen;
+    .flexbox(space-evenly, center, row);
+    margin-top: 5%;
+    margin-right: 10%;
+
+    img {
+        height: 50rem;
+        width: 100%;
+    }
+
+    form {
+        height: 30rem;
+        width: 150%;
+        // background-color: @backgroundcolor;
+        .flexbox(center, center, column);
+    }
+
+    label {
+        display: block;
+        padding: 2rem 0;
+        color: @bodyText;
+        font-size: 2.0rem;
+        font-weight: 700;
+    }
+    
+    input {
+        display: block;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        width: 50%;
+        // background-color: @backgroundcolor;
+    }
+
+     input:focus {
+        border-color: @logo;
+        transition: 500ms ease-in-out;
+     }
+
+    #pwordButton {
+        .bttnstyle(@logo, white);
+        margin-top: 10%;
+    }
+    
+    @media @tablet {
+        // border: 2px solid rebeccapurple;
+        width: 80%;
+        margin-bottom: 20%;
+        img {
+            display: none;
+        }
+
+        form {
+            // border: 2px solid orange;
+            margin: 0% 18%;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+            label {
+                font-size: 5.0rem;
+            }
+
+            input {
+                width: 100%;
+                
+            }
+    }
+
+    @media @phone {
+        // background: purple;
+        opacity: .5;
+        // margin-bottom: 20%;
+
+        form {
+            // border: 2px solid red;
+            margin: 0% 15%;
+        }
+    }
+}

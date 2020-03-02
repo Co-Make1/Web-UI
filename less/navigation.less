@@ -1,5 +1,6 @@
 header {
     height: 10rem;
+    // border: 2px solid red;
 
     .flexbox(space-evenly, center, row);
 
@@ -21,4 +22,24 @@ header {
             }
         }
 
+    @media @tablet {
+        width: 100%;
+    }
+
+    @media @phone {
+        // border: 2px solid orange;
+        height: 50vh;
+        background-color: @backgroundcolor;
+        .flexbox(center, center, column);
+            nav {
+                // border: 2px solid yellow;
+                height: 50%;
+                .flexbox(center, center, column)
+            }
+            
+            a {
+                font-size: 4.0rem;
+                line-height: 150%;
+            }
+    }
 }
