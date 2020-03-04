@@ -20,7 +20,11 @@ To streamline communication between local government and the constituents they s
 # Team
 
 -Brian Clayton
+
 -Joshua Chinchilla
+
 -Natalie Davis
+
 -Alessandra Longaretti
+
 -Sebastian Garces
