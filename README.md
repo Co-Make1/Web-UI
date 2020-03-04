@@ -9,7 +9,7 @@ This app tries to assist in the communication between local government and its c
 
 To streamline communication between local government and the constituents they serve to better facilitate addressing the needs of the community.
 
-# 3. How does our app solve this problem? 
+# How does our app solve this problem? 
 
 -It provides an online platform for residents to post their concerns.
 
