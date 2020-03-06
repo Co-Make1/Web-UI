@@ -1,0 +1,11 @@
+.home .main-content {
+  border: 2px solid green;
+  height: 100rem;
+}
+.home img {
+  height: 50rem;
+  filter: blur(2px);
+}
+.home .top-title {
+  border: 2px solid black;
+}

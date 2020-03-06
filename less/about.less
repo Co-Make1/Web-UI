@@ -1,0 +1,94 @@
+.first-picture {
+
+    padding-bottom: 5%;
+    height: 50rem;
+    margin: 0% 5%;
+    background: @backgroundcolor;
+    .flexbox (space-evenly, center, row);
+    
+
+    p {
+        width: 30%;
+        margin-top: 5%;
+    }
+    
+    img {
+        width: 20rem;
+        height: 5%;
+    }
+
+}
+
+.middle-pictures {
+    
+    height: 50rem;
+    .flexbox (space-between, center, row);
+
+    .left {
+        .flexbox(center, center, column);
+        width: 75%;
+
+        p {
+            margin-bottom: 5%;
+        }
+
+        img {
+            width: 60%;
+        } //img
+    } //left
+
+    .right {
+        .flexbox(center, center, column);
+
+        p {
+            margin-bottom: 5%;
+        }
+
+        img {
+            width: 30%;
+        }
+    }
+}
+
+.lower-pictures {
+    background: @backgroundcolor;
+    height: 50rem;
+    .flexbox (space-between, center, row);
+
+    .left {
+        .flexbox(center, center, column);
+        width: 70%;
+
+        p {
+            margin-bottom: 5%;
+        }
+
+        img {
+            width: 70%;
+        } //img
+    } //left
+
+    .right {
+        .flexbox(center, center, column);
+        padding-left: 5%;
+
+        p {
+            margin-bottom: 5%;
+        }
+
+
+        img {
+            width: 40%;
+        }
+    }
+}
+
+.last-picture {
+    
+    padding-top: 15%;
+    .flexbox (center, center, column);
+    
+    p {
+        margin-bottom: 5%;
+    }
+}

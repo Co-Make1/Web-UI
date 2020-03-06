@@ -1,0 +1,46 @@
+header {
+    height: 10rem;
+    // border: 2px solid red;
+
+    .flexbox(space-evenly, center, row);
+
+    h1 {
+        color: @logo;
+    }
+
+    nav {
+        font-size: 1.6rem;
+        width: 75%;
+        .flexbox(space-evenly, center, row);
+    }
+        a {
+            text-decoration: none;
+            color: @nav;
+            &:hover {
+                letter-spacing: .75rem;
+                transition: all 400ms ease-in-out;
+            }
+        }
+
+    @media @tablet {
+        width: 100%;
+    }
+
+    @media @phone {
+        // border: 2px solid orange;
+        height: 50vh;
+        background-color: @backgroundcolor;
+        .flexbox(center, center, column);
+            nav {
+                // border: 2px solid yellow;
+                height: 50%;
+                margin-top: 10%;
+                .flexbox(center, center, column)
+            }
+            
+            a {
+                font-size: 4.0rem;
+                line-height: 150%;
+            }
+    }
+}

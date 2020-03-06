@@ -1,0 +1,102 @@
+.job-content {
+    .flexbox(space-evenly, center, row);
+    margin-top: 3%;
+    // border: 2px solid aqua;
+
+    img {
+        opacity: .9;
+    }
+
+    .job-text {
+        margin-right: 10%;
+        // border: 2px solid greenyellow;
+    }
+    
+
+        form {
+            .flexbox (center, flex-start, column);
+            // border: 2px solid orange;
+            line-height: 3.0rem;
+            
+
+            label {
+                display: block;
+                padding: 2rem 0;
+                color: @logo;
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+            
+            input {
+                display: block;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                width: 100%;
+            }
+
+            input:focus {
+                border-color: @logo;
+                transition: 500ms ease-in-out;
+            }
+
+            textarea {
+                resize: none;
+                width: 100%;
+                display: block;
+                height: 1.6rem;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                max-height: auto;
+            }
+                textarea:focus {
+                    border-color: @logo;                
+                    transition: 500ms ease-in-out;
+                }
+
+            #searchButton {
+                margin-top: 10%;
+                .bttnstyle(@logo, white);
+            }    
+        }
+
+    @media @tablet {
+        .flexbox(center, center, column);
+
+        img {
+            margin-bottom: 10%;
+        }
+
+        .job-text {
+            margin-left: 15%;
+            width: 30%;
+            text-align: center;
+        }
+
+            label {
+                text-align: center;
+                margin: 0 auto;
+                font-size: 1.6rem;
+            }
+
+            #searchButton {
+                margin-left: 5%;
+            }
+    }
+
+    @media @phone {
+        margin-top: 10%;
+        img {
+            display: none;
+        }
+            #location {
+                margin-bottom: 10%;
+            }
+
+            #searchButton {
+                margin-left: -25%;
+                margin-bottom: 20%;
+            }
+    }
+}

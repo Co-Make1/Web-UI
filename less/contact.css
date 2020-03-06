@@ -1,0 +1,26 @@
+.c-top {
+  height: 50rem;
+}
+.c-top h1 {
+  margin-bottom: 15%;
+  color: #8c8989;
+}
+.c-top p {
+  margin-top: -10%;
+}
+.c-top form {
+  border: 2px solid yellow;
+}
+.c-top input {
+  margin: 0 auto;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.c-top textarea {
+  resize: none;
+  margin: 0 auto;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
